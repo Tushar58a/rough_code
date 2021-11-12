@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>RoughCode: The Advanced Code Editor</title>
+    <meta name="description"
+        content="It will give you better coding friendly environment to design align testing deployment code with dark/light theme toggle experience.  ">
+    <meta name="theme-color" content="#e1c8ef">
+    <link rel="shortcut icon" href="./image/roughcode.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://codemirror.net/lib/codemirror.css">
+    <script type="text/javascript" src="https://codemirror.net/lib/codemirror.js"></script>
+    <script type="text/javascript" src="https://codemirror.net/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="https://codemirror.net/mode/css/css.js"></script>
+    <script type="text/javascript" src="https://codemirror.net/mode/javascript/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="advanced.css">
+
+
+</head>
+
+<body onload="xy()">
+    <div class="se-pre-con"></div>
+    <div id="snackbar">
+        <h2> we found your device's width to be
+            <p id="devicewidthfornotification" style="color:#fc0a9f;font-size:20px;"></p>
+        </h2>
+        <h1 id="hahaha"></h1>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>
+
+        //paste this code under the head tag or in a separate js file.
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <script>
+
+        var txt1 = window.innerWidth;
+
+        if (txt1 >= 950) {
+            document.getElementById("hahaha").innerHTML = "cool ! ready to rock";
+            document.getElementById("snackbar").style.borderLeftColor = "green";
+
+            console.log('honettttt');
+        }
+        else if (txt1 >= 450) {
+            document.getElementById("hahaha").innerHTML = "ok ! try to expand";
+            document.getElementById("snackbar").style.borderLeftColor = "yellow";
+
+            console.log('honettttt');
+        }
+        else {
+            document.getElementById("hahaha").innerHTML = " not preferrable";
+            document.getElementById("snackbar").style.borderLeftColor = "crimson";
+            console.log('honethudhudhudhdttt');
+
+        }
+        document.getElementById("devicewidthfornotification").innerHTML = txt1 + "px";
+        window.addEventListener("resize", myFunction);
+
+
+
+
+        function myFunction() {
+            var txt = window.innerWidth;
+
+            document.getElementById("devicewidthfornotification").innerHTML = txt + "px";
+
+        }
+    </script>
+    <script>
+        function xy() {
+            setTimeout(myFunction, 3000);
+
+
+
+            function myFunction() {
+                var x = document.getElementById("snackbar"); x.className = "show"; setTimeout(function () {
+                    x.className = x.className.replace("show", "");
+                    console.log('jojoj');
+                }, 15000);
+            }
+        }</script>
+
+    <div id="headnotice" style="border-left:10px solid #04ffee;">
+        <div class="rellax" data-rellax-speed="-1" data-rellax-zindex="-5">
+            <h1 div data-aos="slide-down" data-aos-delay="50" data-aos-duration="1000"> <span class="live"><i
+                        class="fas fa-life-ring"></i></span> <span style="color: orangered;" ;>LIVE</span> CODE-EDITOR
+                <a href="codeeditor.html"
+                    style="float:right;padding-right:10px;color:rgb(253, 253, 253);text-decoration:none;"><span>Try
+                        Now</span></a>
+            </h1>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="header" onload="xy()">
+        <div class="name">
+            <h1 style=" font-family: 'Poppins', sans-serif;" class="rellax" data-rellax-speed="-4"
+                data-rellax-zindex="0">
+                <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" class="licon"
+                    colors="primary:#1f1fd3,secondary:#08a88a" stroke="92">
+                </lord-icon>
+                <span style="color:#fff;text-shadow: 0px 4px 4px rgba(0,0,0,0.4);">Roughc<i id="exp"
+                        style="color: rgb(73, 250, 3);" class="fas fa-code"></i>de</span><br>
+                <p style=" font-family: 'Poppins', sans-serif;">Happy
+                    Coding!</p>
+            </h1>
+
+        </div>
+        <div class="description">
+            <div class="rellax" data-rellax-speed="4" data-rellax-zindex="-5">
+
+
+                <h2 div data-aos="slide-right" data-aos-delay="50" data-aos-duration="1000">
+
+                    ADVANCED CODE-<span style="color: rgb(17, 0, 255);">EDITOR</span> </h2>
+
+                <p>It will give you better coding friendly environment to design align testing deployment code with
+                    dark/light theme toggle experience</p>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="float-div">
+        <div class="btn">
+            <a href="color.html"> <span>TRY NOW</span> </a>
+        </div>
+
+
+        <h2>Check our <span style="color: #FA26A0;">Color</span> palette generator </h2>
+        <p> Choose some suitable colors to make a colorful webpage </p>
+    </div>
+
+    <!-- <div class="header" style="width:96%;">
+    <h1>try our <span style="color: #FA26A0;"> live</span> editor<br>customize your coding theme and make it <span
+            style="color:yellow"> your</span> own<br><a href="">try now</a></h1>
+
+
+
+
+
+</div> -->
+    <div class="editor">
+        <div class="code">
+            <div class="options">
+                <button href="" id="run-btn"><i class="fi-rr-forward"></i> Run</button>
+                <button href="" id="run-btn1"><i class="fi-rr-compress-alt"></i> full view width</button>
+                <button href="" id="run-btn2"><i class="fi-rr-compress-alt"></i> minimized width</button>
+                <button href="" id="run-btn6"><i class="fi-rr-opacity"></i> white mode</button>
+                <button href="" id="run-btn7"><i class="fi-rr-opacity"></i> dark mode</button>
+
+            </div>
+
+            <div class="html-code">
+                <h1 class="tags" style="color:orange;"><i class="fab fa-html5"></i></h1>
+                <!-- <div class="copyboard" id="3" onclick="clipboard()"><i class="fi-rr-copy-alt"></i>clipboard</div> -->
+                <button href="" class="run-btn3"><i class="fi-rr-forward"></i> Run</button>
+
+            </div>
+            <div class="css-code">
+                <h1 class="tags" style="color:blue;"><i class="fab fa-css3-alt"></i></h1>
+                <!-- <div class="copyboard" id="2" onclick="clipboard()"><i class="fi-rr-copy-alt"></i>clipboard</div> -->
+                <button href="" class="run-btn4"><i class="fi-rr-forward"></i> Run</button>
+            </div>
+            <div class="js-code">
+                <h1 class="tags" style="color:rgb(247, 255, 130);"><i class="fab fa-js"></i>
+                </h1>
+                <!-- <div class="copyboard" id="1" onclick="clipboard()"><i class="fi-rr-copy-alt"></i>clipboard</div> -->
+                <button href="" class="run-btn5"><i class="fi-rr-forward"></i> Run</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="preview">
+        <h1>resizable window <br><span style="font-size:18px;color:#333;margin-top:-10px;">drag out the window as you
+                wish</span></h1>
+        <iframe id="preview-window"></iframe>
+    </div>
+
+   
+    <footer data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+
+
+        <div class="foot-col-1">
+            <h3> Build & Test</h3>
+
+            <a href="home.html" style="margin-top: 20px;"><i class="fas fa-home"></i> Home-Roughcode</a>
+            <a href="codeeditor.html"><i class="fab fa-html5"></i> General Code Editor</a>
+            <a href="codeeditoradvance.html"><i class="fas fa-edit"></i> Advanced Code Editor</a>
+            <a href="color.html"><i class="fas fa-palette"></i> Gradient Background Colors</a>
+            <a href=""></a>
+
+        </div>
+
+        <div class="foot-col-2">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:roughcode2021@gmail.com"
+                    style="text-decoration: none;color: #ffffff;">roughcode2021@gmail.com</a> </p>
+
+        </div>
+
+        <div class="foot-col">
+            <h3> ROUGHC<i class="fas fa-code" style="color: rgb(52, 236, 15);" id="light"></i>DE</h3>
+
+
+
+            <p><i class="fab fa-dev"></i> Design and devoloped by ROUGHCODE</p>
+
+        </div>
+
+
+    </footer>
+    <div class="lastpart">
+        <p><i class="far fa-copyright"></i> ROUGHCODE 2021
+            All Right Reserved</p>
+    </div>
+
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById("open-button").style.display = "none";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("open-button").style.display = "block";
+        }
+
+    </script>
+    <script>
+
+
+        var headerStyle = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            headerStyle.style.backgroundSize = 140 - +window.pageYOffset / 12 + "%";
+            headerStyle.style.opacity = 1 - +window.pageYOffset / 700 + '';
+        })
+    </script>
+
+
+    <script>
+
+        document.querySelector("#run-btn1").addEventListener("click", function () {
+            document.querySelector(".html-code").style.display = "block";
+            document.querySelector(".html-code").style.width = "90%";
+            document.querySelector(".html-code").style.marginLeft = "5%";
+            document.querySelector(".html-code").style.marginTop = "5%";
+            document.querySelector(".css-code").style.display = "block";
+            document.querySelector(".css-code").style.width = "90%";
+            document.querySelector(".css-code").style.marginLeft = "5%";
+            document.querySelector(".css-code").style.marginTop = "6%";
+            document.querySelector(".js-code").style.display = "block";
+            document.querySelector(".js-code").style.width = "90%";
+            document.querySelector(".js-code").style.marginLeft = "5%";
+            document.querySelector(".js-code").style.marginTop = "6%";
+            document.querySelector(".editor").style.height = "1300px";
+            document.querySelector(".editor").style.height = "1300px";
+            document.querySelector("#run-btn2").style.display = "inline-block";
+            document.querySelector("#run-btn1").style.display = "none";
+            document.querySelector(".run-btn3").style.display = "inline-block";
+            document.querySelector(".run-btn4").style.display = "inline-block";
+            document.querySelector(".run-btn5").style.display = "inline-block";
+
+
+        });
+        document.querySelector("#run-btn2").addEventListener("click", function () {
+            document.querySelector(".html-code").style.display = "inline-block";
+            document.querySelector(".html-code").style.width = "30%";
+            document.querySelector(".html-code").style.marginLeft = "2%";
+            document.querySelector(".html-code").style.marginTop = "5%";
+            document.querySelector(".css-code").style.display = "inline-block";
+            document.querySelector(".css-code").style.width = "30%";
+            document.querySelector(".css-code").style.marginLeft = "2%";
+            document.querySelector(".css-code").style.marginTop = "5%";
+            document.querySelector(".js-code").style.display = "inline-block";
+            document.querySelector(".js-code").style.width = "30%";
+            document.querySelector(".js-code").style.marginLeft = "2%";
+            document.querySelector(".js-code").style.marginTop = "5%";
+            document.querySelector(".code").style.height = "400px";
+            document.querySelector(".editor").style.height = "460px";
+            document.querySelector("#run-btn2").style.display = "none";
+            document.querySelector("#run-btn1").style.display = "inline-block";
+            document.querySelector(".run-btn3").style.display = "none";
+            document.querySelector(".run-btn4").style.display = "none";
+            document.querySelector(".run-btn5").style.display = "none";
+
+
+
+
+        });
+
+        document.querySelector("#run-btn6").addEventListener("click", function () {
+            // document.querySelector(".editor").style.backgroundImage = "url('./images/theme9.jpg')";
+            document.querySelector(".editor").style.backgroundColor = "#111";
+            document.querySelector("#run-btn6").style.display = "none";
+            document.querySelector("#run-btn7").style.display = "inline-block";
+            document.getElementsByClassName("tags").style.color = "#f5faff";
+
+        });
+        document.querySelector("#run-btn7").addEventListener("click", function () {
+            document.querySelector(".editor").style.backgroundImage = "url('./images/theme11.jpg')";
+            document.querySelector(".editor").style.backgroundColor = "#fff";
+            document.querySelector("#run-btn6").style.display = "inline-block";
+            document.querySelector("#run-btn7").style.display = "none";
+            document.getElementsByClassName("tags").style.color = "#111";
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="code.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

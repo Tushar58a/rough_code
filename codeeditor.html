@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="shortcut icon" href="./image/roughcode.ico" type="image/x-icon">
+    <title>RoughCode: Live Code Editor - Impliment your Front-end Code easily</title>
+    <meta name="description"
+        content=" Design Align Testing Deployment Code, discover the newest hand-picked color palettes, resize your window size, customize your coding theme and make it your own ">
+    <meta name="theme-color" content="#32abdc">
+
+    <link rel="stylesheet" href="codeeditor.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" type="text/css" href="codeeditor.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <link rel="stylesheet" href="codeeditor.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/intro.js/minified/introjs.min.css" rel="stylesheet">
+    <link href="../../introjs.css" rel="stylesheet">
+
+    <link href="../../themes/introjs-nazanin.css" rel="stylesheet">
+
+
+
+
+</head>
+
+
+<body onload="xy()">
+
+
+    <div id="snackbar">
+        <h2> we found your device's width to be
+            <p id="devicewidthfornotification" style="color:#fc0a9f;font-size:20px;"></p>
+        </h2>
+        <h1 id="hahaha"></h1>
+
+
+    </div>
+    <script>
+
+        var txt1 = window.innerWidth;
+
+        if (txt1 >= 950) {
+            document.getElementById("hahaha").innerHTML = "cool ! ready to rock";
+            document.getElementById("snackbar").style.borderLeftColor = "green";
+
+            console.log('honettttt');
+        }
+        else if (txt1 >= 450) {
+            document.getElementById("hahaha").innerHTML = "ok ! try to expand";
+            document.getElementById("snackbar").style.borderLeftColor = "yellow";
+
+            console.log('honettttt');
+        }
+        else {
+            document.getElementById("hahaha").innerHTML = " not preferrable";
+            document.getElementById("snackbar").style.borderLeftColor = "crimson";
+            console.log('honethudhudhudhdttt');
+
+        }
+        document.getElementById("devicewidthfornotification").innerHTML = txt1 + "px";
+        window.addEventListener("resize", myFunction);
+
+
+
+
+        function myFunction() {
+            var txt = window.innerWidth;
+
+            document.getElementById("devicewidthfornotification").innerHTML = txt + "px";
+
+        }
+    </script>
+    <div id="headnotice" style="border-left:8px solid #04ffee;">
+        <div class="rellax" data-rellax-speed="-1" data-rellax-zindex="-5">
+            <h1 div data-aos="slide-down" data-aos-delay="50" data-aos-duration="1000">Check our pallete-generator
+                <span><a href=""
+                        style="float:right;padding-right:10px;color:rgb(253, 253, 253);text-decoration:none;">Try
+                        Now</a></span>
+            </h1>
+        </div>
+    </div>
+
+
+
+
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109290764806540");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+    <div id="header" onload="xy()">
+        <div class="name">
+            <h1 style=" font-family: 'Poppins', sans-serif;" class="rellax" data-rellax-speed="-4"
+                data-rellax-zindex="0">
+                <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" class="licon"
+                    colors="primary:#1f1fd3,secondary:#08a88a" stroke="92">
+                </lord-icon>
+                <span style="color:#fff;text-shadow: 0px 4px 4px rgba(0,0,0,0.4);">Roughc<i id="exp"
+                        style="color: rgb(73, 250, 3);" class="fas fa-code"></i>de</span><br>
+                <p style=" font-family: 'Poppins', sans-serif;color: rgb(239, 243, 10);">Happy
+                    Coding!</p>
+            </h1>
+
+        </div>
+        <div class="description">
+            <div class="rellax" data-rellax-speed="4" data-rellax-zindex="-5">
+
+
+                <h1 div data-aos="slide-right" data-aos-delay="50" data-aos-duration="1000">
+                    <span class="live"><i class="fas fa-life-ring"></i></span>
+                    <span style="color:orangered">Live</span> Code-Editor
+                </h1>
+                <!-- <h3>Make it fun not <span style="color: #F51663;">hectic</span></h3> -->
+                <h4>Its easy to <span style="color: #FA53A0; font-weight: 600;">impliment</span> your code with our
+                    Roughcode cuz its</h4>
+                <p style="font-family: 'Poppins', sans-serif;"> <span
+                        style="color: rgba(116, 252, 5, 0.863);">C</span><span style="color: #01b7ff;">S</span><span
+                        style="color: #01b7ff;">S</span> <span style="color: rgb(255, 255, 255);">-</span>
+                    <span style="color:rgb(73, 250, 3);">costfree</span>
+                    <span style="color:#01b7ff">simple</span> <span style="color:#ffaa00">sophisticated</span>
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    
+
+
+    <div class="color-parent" style="border-left:8px solid springgreen;">
+        <div class="aside">
+            <h1>choose your <br><span style="font-size: 26px;font-weight: 700;">background</span> </h1>
+        </div>
+
+        <div class="capsole" tyle="margin-left: 30px;" onclick="abc(0)">
+            <div class="circle-div"
+                style="background-image: url(./image/card.png); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Card-theme</h5>
+        </div>
+        <div class="capsole" onclick="abc(1)">
+            <div class="circle-div"
+                style="background-image: url(./image/img1.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Programming</h5>
+        </div>
+        <div class="capsole" onclick="abc(2)">
+            <div class="circle-div"
+                style="background-image: url(./image/fluid22.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Fluid Pouring</h5>
+        </div>
+        <div class="capsole" onclick="abc(3)">
+            <div class="circle-div"
+                style="background-image: url(./image/card5.png); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Yellowish</h5>
+        </div>
+        <div class="capsole" onclick="abc(4)">
+            <div class="circle-div"
+                style="background-image: url(./image/img2.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Colorful-shapes</h5>
+        </div>
+        <div class="capsole" onclick="abc(5)">
+            <div class="circle-div"
+                style="background-image: url(./image/Data_Programming1.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Data Science</h5>
+        </div>
+        <div class="capsole" onclick="abc(6)">
+            <div class="circle-div"
+                style="background-image: url(./image/space.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Space</h5>
+        </div>
+        <div class="capsole" onclick="abc(7)">
+            <div class="circle-div"
+                style="background-image: url(./image/summer.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Summer</h5>
+        </div>
+        <div class="capsole" onclick="abc(8)">
+            <div class="circle-div"
+                style="background-image: url(./image/Technology.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Technology</h5>
+        </div>
+        <div class="capsole" onclick="abc(9)">
+            <div class="circle-div"
+                style="background-image: url(./image/code.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Code</h5>
+        </div>
+        <div class="capsole" onclick="abc(10)">
+            <div class="circle-div"
+                style="background-image: url(./image/jungle.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Jungle</h5>
+        </div>
+        <div class="capsole" onclick="abc(11)">
+            <div class="circle-div"
+                style="background-image: url(./image/img3.jpg); background-size:cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Flat Geometric</h5>
+        </div>
+        <div class="capsole" onclick="abc(12)">
+            <div class="circle-div"
+                style="background-image: url(./image/img4.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Vector Geometric</h5>
+        </div>
+        <div class="capsole" onclick="abc(13)">
+            <div class="circle-div"
+                style="background-image: url(./image/img5.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Gradient Luxury</h5>
+        </div>
+        <div class="capsole" onclick="abc(14)">
+            <div class="circle-div"
+                style="background-image: url(./image/img7.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Gradient Hexagonal</h5>
+        </div>
+        <div class="capsole" onclick="abc(15)">
+            <div class="circle-div"
+                style="background-image: url(./image/img6.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Abstract Wireframe</h5>
+        </div>
+        <div class="capsole" onclick="abc(16)">
+            <div class="circle-div"
+                style="background-image: url(./image/Clear\ Drinking\ Glass\ With\ Water\ and\ Lemon.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Water and Lemon</h5>
+        </div>
+        <div class="capsole" onclick="abc(17)">
+            <div class="circle-div"
+                style="background-image: url(./image/Bell\ Peppers\ Dropped\ on\ Water.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Bell Peppers</h5>
+        </div>
+        <div class="capsole" onclick="abc(18)">
+            <div class="circle-div"
+                style="background-image: url(./image/farm.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Farm</h5>
+        </div>
+        <div class="capsole" onclick="abc(19)">
+            <div class="circle-div"
+                style="background-image: url(./image/four.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Four Cocktail</h5>
+        </div>
+        <div class="capsole" onclick="abc(20)">
+            <div class="circle-div"
+                style="background-image: url(./image/h.jpg); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Hexagonal Infographic</h5>
+        </div>
+        <div class="capsole" onclick="abc(21)">
+            <div class="circle-div"
+                style="background-image: url(./image/card4.png); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Green-Theme</h5>
+        </div>
+        <div class="capsole" onclick="abc(22)">
+            <div class="circle-div"
+                style="background-image: url(./image/Coding\ Friendly.jpg);background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Coding Friendly</h5>
+        </div>
+        <div class="capsole" onclick="abc(23)">
+            <div class="circle-div"
+                style="background-image: url(./image/card3.png); background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Grayish</h5>
+        </div>
+        <div class="capsole" style="margin-right: 20px;" onclick="abc(24)">
+            <div class="circle-div"
+                style="background-image: url(./image/card2.png);background-size: cover; background-repeat: no-repeat;">
+            </div>
+            <h5>Violet-Theme</h5>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <h2> <i class="fi-rr-notebook"></i> if you refresh the page all of your work will be eliminated</h2> -->
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2><i class="fi-rr-comment-alt"></i> this system is in devolopment zone.
+                    <br><span style="font-size:12px;color:#f5faff;">right click on the mouse and select option save
+                        image to save the file</span>
+                </h2>
+            </div>
+
+        </div>
+        
+
+    </div>
+    <div id="crossbig" style="border-left:8px solid #fee440;"> click here to extract image of the code<i
+            class="fi-rr-camera"></i>
+    </div>
+    <div class="white" onclick="heaven()">
+        <h1>customize theme with <i class="fi-rr-palette"></i>olors</h1>
+        <h2 style="font-size:28px;">explore more </h2>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction4()">
+            <i class="fas fa-angle-double-down" style="padding-left:4px;padding-top:48px;"></i>
+        </a>
+        <!-- <i class="fi-rr-arrow-right" style="float: right;"></i> -->
+    </div>
+
+    <div class="color-palette" id="horny">
+
+
+        <div id="bobdylan" style="display:inline;transition: 0.4s;">
+
+
+            <div class="circle-1" onclick="abc1(1)" style="background-color: #DCA3C2;"></div>
+            <div class="circle" onclick="abc1(2)" style="background-color: #C7CEF4;"></div>
+            <div class="circle" onclick="abc1(3)" style="background-color: #D1A69B;"></div>
+            <div class="circle" onclick="abc1(4)" style="background-color: #7894CF;"></div>
+            <div class="circle" onclick="abc1(5)" style="background-color: #97D2E1;"></div>
+            <div class="circle" onclick="abc1(6)" style="background-color: #EBB88D;"></div>
+            <div class="circle" onclick="abc1(7)" style="background-color: #D27AE7;"></div>
+            <div class="circle" onclick="abc1(8)" style="background-color: #EFD200;"></div>
+            <div class="circle" onclick="abc1(9)" style="background-color: #527462;"></div>
+            <div class="circle" onclick="abc1(10)" style="background-color: #3A887C;"></div>
+            <div class="circle" onclick="abc1(11)" style="background-color: #89C4A0;"></div>
+            <div class="circle" onclick="abc1(12)" style="background-color: #E12E4B;"></div>
+            <div class="circle" onclick="abc1(13)" style="background-color: #E8E9EE;"></div>
+            <div class="circle" onclick="abc1(14)" style="background-color: #E8AE3C;"></div>
+            <div class="circle" onclick="abc1(15)" style="background-color: #c7E1EB;"></div>
+            <div class="circle" onclick="abc1(16)" style="background-color: #989CED;"></div>
+            <div class="circle" onclick="abc1(17)" style="background-color: #A6EBFD;"></div>
+            <div class="circle" onclick="abc1(18)" style="background-color: #47cf73;"></div>
+            <div class="circle" onclick="abc1(19)" style="background-color: #DF3C22;"></div>
+            <div class="circle" onclick="abc1(20)" style="background-color: #2C6B96;"></div>
+            <div class="circle" onclick="abc1(21)" style="background-color: #FFAEBC;"></div>
+            <div class="circle" onclick="abc1(22)" style="background-color: #A0E7E5;"></div>
+            <div class="circle" onclick="abc1(23)" style="background-color: #B4F8C8;"></div>
+            <div class="circle" onclick="abc1(24)" style="background-color: #FBE7C6;"></div>
+            <div class="circle" onclick="abc1(25)" style="background-color: #EF7C8E;"></div>
+            <div class="circle" onclick="abc1(26)" style="background-color: #FAE8E0;"></div>
+            <div class="circle" onclick="abc1(27)" style="background-color: #D8A7B1;"></div>
+            <div class="circle" onclick="abc1(28)" style="background-color: #B6E2D3;"></div>
+            <div class="circle" onclick="abc1(29)" style="background-color: #EEEDE7;"></div>
+            <div class="circle" onclick="abc1(30)" style="background-color: #868B8E;"></div>
+            <div class="circle" onclick="abc1(31)" style="background-color: #B9B7BD;"></div>
+            <div class="circle" onclick="abc1(32)" style="background-color: #E7D2CC;"></div>
+            <div class="circle" onclick="abc1(33)" style="background-color: #7EC8E3;"></div>
+            <div class="circle" onclick="abc1(34)" style="background-color: #0000EE;"></div>
+            <div class="circle" onclick="abc1(35)" style="background-color: #000C66;"></div>
+            <div class="circle" onclick="abc1(36)" style="background-color: #050A30;"></div>
+            <div class="circle" onclick="abc1(37)" style="background-color: #F51720;"></div>
+            <div class="circle" onclick="abc1(38)" style="background-color: #FA26A0;"></div>
+            <div class="circle" onclick="abc1(39)" style="background-color: #F8D210;"></div>
+            <div class="circle" onclick="abc1(40)" style="background-color: #2FF3E0;"></div>
+            <div class="circle" onclick="abc1(41)" style="background-color: #B1D4E0;"></div>
+            <div class="circle" onclick="abc1(42)" style="background-color: #2E8BC0;"></div>
+            <div class="circle" onclick="abc1(43)" style="background-color: #0C2D48;"></div>
+            <div class="circle" onclick="abc1(44)" style="background-color: #145DA0;"></div>
+            <div class="circle" onclick="abc1(45)" style="background-color: #3D5B59;"></div>
+            <div class="circle" onclick="abc1(46)" style="background-color: #FCB5AC;"></div>
+            <div class="circle" onclick="abc1(47)" style="background-color: #B99095;"></div>
+            <div class="circle" onclick="abc1(48)" style="background-color: #59981A;"></div>
+            <div class="circle" onclick="abc1(49)" style="background-color: #ECF87F;"></div>
+            <div class="circle" onclick="abc1(50)" style="background-color: #81B622;"></div>
+            <div class="circle" onclick="abc1(51)" style="background-color: #3D550C;"></div>
+            <div class="circle" onclick="abc1(52)" style="background-color: #C3E0E5;"></div>
+            <div class="circle" onclick="abc1(53)" style="background-color: #274472;"></div>
+            <div class="circle" onclick="abc1(54)" style="background-color: #5885AF;"></div>
+            <div class="circle" onclick="abc1(55)" style="background-color: #41729F;"></div>
+            <div class="circle" onclick="abc1(56)" style="background-color: #EEB5EB;"></div>
+            <div class="circle" onclick="abc1(57)" style="background-color: #C26DBC;"></div>
+            <div class="circle" onclick="abc1(58)" style="background-color: #3CACAE;"></div>
+            <div class="circle" onclick="abc1(59)" style="background-color: #FD49A0;"></div>
+            <div class="circle" onclick="abc1(60)" style="background-color: #A16AE8;"></div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction4() {
+            var x = document.getElementById("horny");
+            if (x.style.height === "100px") {
+                x.style.height = "0px";
+            } else {
+                x.style.height = "100px";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        // function heaven() {
+        //     var elmnt = document.getElementById("bobdylan");
+        //     elmnt.scrollIntoView(true);
+        //     document.getElementById("bobdylan").style.transition = "all 2s";
+        //     document.getElementById("bobdylan").style.transition = "all 2s";
+        // }
+        function heaven() {
+            var elmnt = document.getElementById("bobdylan");
+
+
+            elmnt.style.transform = "translateX(" + 100 + "%" + ")";
+        }
+        // $('.white').click(function () {
+        //     event.preventDefault();
+        //     $('#content').animate({
+        //         scrollLeft: "+=200px"
+        //     }, "slow");
+        // });
+
+        // $('.color-palette').click(function () {
+        //     event.preventDefault();
+        //     $('#content').animate({
+        //         scrollLeft: "-=200px"
+        //     }, "slow");
+        // });
+    </script>
+
+
+
+    <!-- <div class="code-area" id="two" data-title="hello" data-intro="this is a real page"> -->
+    <div class="code-area" id="two" style="border-left:8px solid #ffb4a2;">
+        <h1 id="run-btn1">full width</h1>
+        <h1 id="run-btn2">small width</h1>
+        <div>
+
+            <div class="html">
+                <h1 div data-aos="flip-up" data-aos-anchor-placement="bottom-center" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-html5" style="color: #ff3c41;"></i> HTML
+                </h1>
+                <textarea id="htmlCode" placeholder="HTML Code" oninput="showPreview()"></textarea>
+                <div class="copyboard" id="3" onclick="clipboard1()"><i class="fi-rr-copy-alt"></i>clipboard</div>
+            </div>
+            <div class="css">
+                <h1 div data-aos="flip-up" data-aos-anchor-placement="bottom-center" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-css3-alt" style="color: #0ebeff;"></i> CSS</h1>
+
+                <textarea id="cssCode" placeholder="CSS Code" oninput="showPreview()"></textarea>
+                <div class="copyboard" id="2" onclick="clipboard2()"><i class="fi-rr-copy-alt"></i>clipboard</div>
+            </div>
+            <div class="js">
+                <h1 div data-aos="flip-up" data-aos-anchor-placement="bottom-center" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out"><i class="fab fa-js" style="color: #fcd000;"></i>JS</h1>
+
+                <textarea id="jsCode" placeholder="JavaScript Code" oninput="showPreview()"></textarea>
+                <div class="copyboard" id="1" onclick="clipboard()"><i class="fi-rr-copy-alt"></i>clipboard</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="headlines">
+        <h1 id="headlines1" div data-aos="slide-right" data-aos-anchor-placement="bottom-center"><i
+                class="fi-rr-compress-alt"></i>Resizeable
+            Window
+        </h1>
+        <p class="note"><i class="fi-rr-id-badge"></i> resize the whole
+            window to find out the breakpoints</p>
+        <h2 id="width">width</h2>
+
+        <h3 onclick="popup()">Take Screesh<i class="fi-rr-camera"></i>t</h3><!-- takeScreenShot(); -->
+        <h3 onclick="location.href='codeeditoradvance.html'">advance code editor <i class="fi-rr-money"></i></h3>
+
+
+    </div>
+    <!-- <div class="preview-area" ">
+        
+         <span class=" close">&times;</span>
+        <iframe id=" preview-window"></iframe>
+        <h1 class="logo"><span style="font-size:16px;">created on</span><br>Roughcode</h1>
+    </div> -->
+
+    <!-- <script src=" codeeditor.js">
+        </script> -->
+
+    <div class="preview-area">
+        <iframe id="preview-window"></iframe>
+        <h1 class="logo" div data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out"><span style="font-size:16px;">created
+                on</span><br>Roughc<i id="exp" style="color: rgb(255, 0, 0);" class="fas fa-code"></i>de</h1>
+    </div>
+    <div id="one"></div>
+
+
+    <!-- for poup when screenshot approach activated -->
+    <div id="popupbox" onclick="document.getElementById('popupbox').style.display='none'; ">
+        <h1>this process is in devolopment phase </h1>
+        <h1>refreshing won't work</h1>
+    </div>
+    <div style="background-color: #131417;border-left:8px solid #00BFB2;padding-top:3px;">
+        <div class="link-header">
+            <div class="see-more">
+                <h4>Swipe right <i class="fi-rr-angle-double-right"></i></h4>
+            </div>
+    
+            <h2 div data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+                <span style="color: rgb(2, 250, 176);font-weight:500;font-size:18px;"> Some
+                    useful</span> <br><span style="font-weight:700;font-size:32px;">we<span
+                        style="border-bottom: 2px solid rgb(255, 230, 8);">bsit</span>e</span>
+            </h2>
+            <p><i class="fi-rr-bookmark" style="color: #47cf73;"></i> Visit these website it will definitely help in
+                your
+                projects </p>
+
+               
+        </div>
+        
+        <div class="useful-link">
+
+            <a href="https://www.flaticon.com/" class="box-1" style=" border-left:8px solid #fc0a9f;">
+                <img src="./image/flaticon__1_-removebg-preview.png" alt="">
+                <h3>Flaticon</h3>
+            </a>
+
+            <a href="https://fontawesome.com/" class="box-2" style=" border-left:8px solid #FFCF00;">
+                <img src="./image/font_awesome_logo-removebg-preview.png" alt="">
+                <h3>Font Awesome</h3>
+            </a>
+
+            <a href="https://fonts.google.com/" class="box-3" style=" border-left:8px solid #D00000;">
+                <img src="./image/googlefonts-removebg-preview.png" alt="">
+                <h3>Google Fonts</h3>
+            </a>
+
+            <a href="https://www.w3schools.com/" class="box-4" style=" border-left:8px solid #E7F9A9;">
+                <img src="./image/w3.png" alt="">
+                <h3>W3Schools</h3>
+            </a>
+
+            <a href="https://www.pexels.com/" class="box-5" style=" border-left:8px solid #00BFB2;">
+                <img src="./image/Pexels-Logo-removebg-preview.png" alt="">
+                <h3>Pexels</h3>
+            </a>
+
+            <a href="https://www.freepik.com/home" class="box-6" style=" border-left:8px solid #44CCFF;">
+                <img src="./image/freepik-removebg-preview.png" alt="">
+                <h3>Freepik</h3>
+            </a>
+        </div>
+
+        
+
+    </div>
+    <footer>
+
+
+        <div class="foot-col-1">
+            <h3> Build & Test</h3>
+
+            <a href="home.html" style="margin-top: 20px;"><i class="fas fa-home"></i> Home-Roughcode</a>
+            <a href="codeeditor.html"><i class="fab fa-html5"></i> General Code Editor</a>
+            <a href="codeeditoradvance.html"><i class="fas fa-edit"></i> Advanced Code Editor</a>
+            <a href="colorgradient.html"><i class="fas fa-palette"></i> Gradient Background Colors</a>
+            <a href=""></a>
+
+        </div>
+
+        <div class="foot-col-2">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:roughcode2021@gmail.com"
+                    style="text-decoration: none;color: #ffffff;">roughcode2021@gmail.com</a> </p>
+
+        </div>
+
+        <div class="foot-col">
+            <h3> ROUGHC<i class="fas fa-code" style="color: rgb(52, 236, 15); " id="light"></i>DE</h3>
+
+
+
+            <p><i class="fab fa-dev"></i> Design and devoloped by ROUGHCODE</p>
+
+        </div>
+
+
+    </footer>
+    <div class="last">
+        <p><i class="far fa-copyright"></i> ROUGHCODE 2021
+            All Right Reserved</p>
+    </div>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script>
+
+
+        introJs().setOptions(
+            {
+                steps: [{
+                    title: 'Welcome to ROUGHCODE',
+                    intro: 'Hello user! 👋,take a optional tour to know the tools',
+                    tooltipClass: 'customTooltip'
+                },
+                {
+                    title: 'implement ideas with cdn links👋',
+                    element: document.querySelector('.html'),
+                    intro: 'write down your HTML code out here ',
+                    position: "right",
+                    tooltipClass: 'customTooltip1'
+                },
+                {
+                    title: 'import google fonts and others to make it best⛄',
+                    element: document.querySelector('.css'),
+                    intro: 'write down your css code your here',
+                    position: "left",
+                    tooltipClass: 'customTooltip2'
+                },
+                {
+                    title: 'its custom library supported 😀',
+                    element: document.querySelector('.js'),
+                    intro: 'ahhh finally javascript code if you can',
+                    position: "left",
+
+                    tooltipClass: 'customTooltip3'
+                },
+                {
+                    title: 'see your result live😜',
+                    element: document.querySelector('#one'),
+                    intro: 'This is the responsive window to view your output',
+                    tooltipClass: 'customTooltip4'
+                },
+                {
+                    title: 'roar like a lion🦁',
+                    element: document.querySelector('.useful-link'),
+                    intro: 'perks to help you',
+                    tooltipClass: 'customTooltip5'
+                },
+                {
+                    title: 'you are ready to go',
+
+                    intro: 'implement your codes to make them work',
+                    tooltipClass: 'customTooltip',
+                    position: "top"
+                }]
+
+
+            }
+        ).start();
+
+    </script>
+
+
+
+
+    <script>
+        function xy() {
+            setTimeout(myFunction, 3000);
+
+            let run = true;
+
+
+            function myFunction() {
+
+                var x = document.getElementById("snackbar"); x.className = "show"; setTimeout(function () {
+                    x.className = x.className.replace("show", "");
+                    console.log('jojoj');
+                }, 15000);
+
+                myFunction() = undefined;
+
+
+            };
+
+
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function abc1(i) {
+            const imgArraypop = [
+                '#DCA3C2',
+                '#DCA3C2',
+                '#C7CEF4',
+                '#D1A69B',
+                '#7894CF',
+                '#97D2E1',
+                '#EBB88D',
+                '#D27AE7',
+                '#EFD200',
+                '#527462',
+                '#3A887C',
+                '#89C4A0',
+                '#E12E4B',
+                '#E8E9EE',
+                '#E8AE3C',
+                '#c7E1EB',
+                '#989CED',
+                '#A6EBFD',
+                '#47cf73',
+                '#DF3C22',
+                '#2C6B96',
+                '#FFAEBC',
+                '#A0E7E5',
+                '#B4F8C8',
+                '#FBE7C6',
+                '#EF7C8E',
+                '#FAE8E0',
+                '#D8A7B1',
+                '#B6E2D3',
+                '#EEEDE7',
+                '#868B8E',
+                '#B9B7BD',
+                '#E7D2CC',
+                '#7EC8E3',
+                '#0000EE',
+                '#000C66',
+                '#050A30',
+                '#F51720',
+                '#FA26A0',
+                '#F8D210',
+                '#2FF3E0',
+                '#B1D4E0',
+                '#2E8BC0',
+                '#0C2D48',
+                '#145DA0',
+                '#3D5B59',
+                '#FCB5AC',
+                '#B99095',
+                '#59981A',
+                '#ECF87F',
+                '#81B622',
+                '#3D550C',
+                '#C3E0E5',
+                '#274472',
+                '#5885AF',
+                '#41729F',
+                '#EEB5EB',
+                '#C26DBC',
+                '#3CACAE',
+                '#FD49A0',
+                '#A16AE8'
+
+
+
+
+
+
+
+            ]
+            const theme = imgArraypop[i];
+            const themecolor = document.getElementById("two");
+            const headlines1 = document.getElementById("headlines1");
+            themecolor.style.backgroundColor = theme;
+            themecolor.style.transition = "0.4s";
+
+        }
+    </script>
+
+
+
+    <script>
+        function clipboard() {
+            var copyText = document.getElementById("jsCode");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+
+            const oldText = document.getElementById("1").innerHTML;
+            document.getElementById("1").innerHTML = "copied";
+
+            setTimeout(() => {
+
+                document.getElementById("1").innerHTML = "clipboard";
+            }, 3000);
+
+        }
+        function clipboard1() {
+            var copyText = document.getElementById("htmlCode");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            const oldText = document.getElementById("3").innerHTML;
+            document.getElementById("3").innerHTML = "copied";
+
+            setTimeout(() => {
+
+                document.getElementById("3").innerHTML = "clipboard";
+            }, 3000);
+
+
+        }
+        function clipboard2() {
+            var copyText = document.getElementById("cssCode");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+
+            const oldText = document.getElementById("2").innerHTML;
+            document.getElementById("2").innerHTML = "copied";
+
+            setTimeout(() => {
+
+                document.getElementById("2").innerHTML = "clipboard";
+            }, 3000);
+        }
+    </script>
+
+
+    <script>
+        function showPreview() {
+            var htmlCode = document.getElementById("htmlCode").value;
+            var cssCode = "<style>" + document.getElementById("cssCode").value + "</style>";
+            var jsCode = "<scri" + "pt>" + document.getElementById("jsCode").value + "</scri" + "pt>";
+            var frame = document.getElementById("preview-window").contentWindow.document;
+            frame.open();
+            frame.write(htmlCode + cssCode + jsCode);
+            frame.close();
+        }
+    </script>
+
+
+    <script>
+        function abc(i) {
+            const imgArray = [
+                'url(./image/card.png)',
+                'url(./image/img1.jpg)',
+                'url(./image/fluid22.jpg)',
+                'url(./image/card5.png)',
+                ' url(./image/img2.jpg)',
+                ' url(./image/Data_Programming1.jpg)',
+                ' url(./image/space.jpg)',
+                ' url(./image/summer.jpg)',
+                ' url(./image/Technology.jpg)',
+                ' url(./image/code.jpg)',
+                ' url(./image/jungle.jpg)',
+                ' url(./image/img3.jpg)',
+                ' url(./image/img4.jpg)',
+                ' url(./image/img5.jpg)',
+                ' url(./image/img7.jpg)',
+                ' url(./image/img6.jpg)',
+                ' url(./image/Clear Drinking Glass With Water and Lemon.jpg)',
+                ' url(./image/Bell Peppers Dropped on Water.jpg)',
+                ' url(./image/farm.jpg)',
+                ' url(./image/Four.jpg)',
+                ' url(./image/h.jpg)',
+                ' url(./image/card4.png)',
+                ' url(./image/Coding Friendly.jpg)',
+                ' url(./image/card3.png)',
+                ' url(./image/card2.png)',
+
+
+
+            ]
+
+            const htmlstyle = document.getElementById("htmlCode");
+            const css = document.getElementById("cssCode");
+            const js = document.getElementById("jsCode");
+            const wallpaper = document.getElementById("header");
+
+            const bg = imgArray[i];
+            htmlstyle.style.backgroundImage = bg;
+            css.style.backgroundImage = bg;
+            js.style.backgroundImage = bg;
+            wallpaper.style.backgroundImage = bg;
+
+
+
+
+
+
+
+
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    <script>
+
+
+        var headerStyle = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            headerStyle.style.backgroundSize = 400 - +window.pageYOffset / 6 + "%";
+            headerStyle.style.opacity = 1 - +window.pageYOffset / 700 + '';
+        })
+    </script>
+    <script>
+        var txt1 = window.innerWidth;
+        document.getElementById("width").innerHTML = "width: " + txt1 + "px";
+        window.addEventListener("resize", myFunction);
+
+
+        function myFunction() {
+            var txt = window.innerWidth;
+
+            document.getElementById("width").innerHTML = "width: " + txt + "px";
+        }
+    </script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+    <script>
+        function takeScreenShot() {
+            // querySelector("#1one")
+            html2canvas(document.querySelector(".preview-area")).then(canvas => {
+
+                document.getElementById('one').appendChild(canvas);
+
+
+            });
+        }
+
+
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("crossbig");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            document.getElementById("2").innerHTML = "Roughcode";
+            document.getElementById("1").innerHTML = "Roughcode";
+            document.getElementById("3").innerHTML = "Roughcode";
+            modal.style.display = "block";
+            html2canvas(document.querySelector("#two")).then(canvas => {
+
+                document.getElementById('myModal').appendChild(canvas);
+
+
+            });
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // var alpacino = document.getElementById("popupbox");
+        // function popup() {
+        //     alpacino.style.display = "block";
+        // }
+        // When the user clicks anywhere outside of the modal, close it
+        // window.onclick = function (event) {
+        //     if (event.target == body) {
+        //         alpacino.style.display = "none";
+        //     }
+        // }
+
+
+        function popup() {
+            var alpacino = document.getElementById("popupbox");
+            setTimeout(function () {
+                alpacino.style.display = "block";
+            }, 1000);
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+    </script>
+    <script>
+        // Also can pass in optional settings block
+        var rellax = new Rellax('.rellax', {
+            speed: -6,
+            center: false,
+            wrapper: null,
+            round: true,
+            horizontal: true,
+            vertical: false,
+
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.querySelector("#run-btn1").addEventListener("click", function () {
+            document.querySelector(".html").style.display = "block";
+            document.querySelector(".html").style.width = "90%";
+            document.querySelector(".html").style.marginLeft = "5%";
+            document.querySelector(".html").style.marginTop = "5%";
+            document.querySelector(".css").style.display = "block";
+            document.querySelector(".css").style.width = "90%";
+            document.querySelector(".css").style.marginLeft = "5%";
+            document.querySelector(".css").style.marginTop = "6%";
+            document.querySelector(".js").style.display = "block";
+            document.querySelector(".js").style.width = "90%";
+            document.querySelector(".js").style.marginLeft = "5%";
+            document.querySelector(".js").style.marginTop = "6%";
+            // document.querySelector(".code-area").style.height = "500px";
+            document.querySelector(".code-area").style.height = "1400px";
+            document.querySelector("#run-btn2").style.display = "inline-block";
+            document.querySelector("#run-btn1").style.display = "none";
+
+
+
+        });
+        document.querySelector("#run-btn2").addEventListener("click", function () {
+            document.querySelector(".html").style.display = "inline-block";
+            document.querySelector(".html").style.width = "30%";
+            document.querySelector(".html").style.marginLeft = "2%";
+            document.querySelector(".html").style.marginTop = "5%";
+            document.querySelector(".css").style.display = "inline-block";
+            document.querySelector(".css").style.width = "30%";
+            document.querySelector(".css").style.marginLeft = "2%";
+            document.querySelector(".css").style.marginTop = "5%";
+            document.querySelector(".js").style.display = "inline-block";
+            document.querySelector(".js").style.width = "30%";
+            document.querySelector(".js").style.marginLeft = "2%";
+            document.querySelector(".js").style.marginTop = "5%";
+            // document.querySelector(".code-area").style.height = "400px";
+            document.querySelector(".code-area").style.height = "580px";
+            document.querySelector("#run-btn2").style.display = "none";
+            document.querySelector("#run-btn1").style.display = "inline-block";
+
+
+
+
+
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+  body {
+    background-color: #f1f1f1;
+    background-image: url(./image/theme17.jpg);
+    background-size: cover;
+
+  }
+  
+  #regForm {
+    /* background-color :#131417; */
+    background-image: url(./image/theme9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   margin-top:100px;
+   margin-left:auto;
+   margin-right:auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 260px;
+    border-left: 10px solid rgb(223, 14, 188);
+    position: relative;
+    transition: all 0.4s;
+    border-radius:6px;
+  }
+  
+  h1 {
+    /* text-align: center;  */
+    margin-left: 10px;
+    /* font-family: 'Poppins', sans-serif;  */
+    color: #ffffff;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    /* font-family: Raleway; */
+    border: 1px solid #aaaaaa;
+  }
+  
+  
+  input.invalid {
+    background-color: #ffdddd;
+    /* background-color: black; */
+  }
+  
+  
+  .tab {
+    display: none;
+    /* background-color: blue; */
+    width: 100%;
+    transition: all 1s;
+    /* height: 100px; */
+    /* position: absolute; */
+    /* background-color: rgb(151, 131, 131); */
+    /* margin-left: 0%; */
+    /* z-index: -10; */
+  }
+  .tab h2{
+      margin-left: 10px;
+      color: #fff;
+      text-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+  }
+  .tab p{
+      margin-left: 10px;
+      color: #c7c9d3;
+  }
+
+  
+  
+  button {
+    /* background-color: #04AA6D; */
+    background-color: #d33f8d;
+    color: #ffffff;
+   
+    border: none;
+    border-radius: 6px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    /* font-family: Raleway; */
+    cursor: pointer;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    z-index: 100;
+    /* position: absolute; */
+
+  }
+  
+  
+  button:hover {
+    /* opacity: 0.8; */
+    background: #000;
+
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+
+  @media screen and (max-width:800px) {
+    #regForm{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      /* height: 500px; */
+    }
+    
+  }
+
+  @media screen and (max-width:617px) {
+    h1{
+      font-size: 26px;
+    }
+    .tab h2{
+      font-size: 22px;
+    }
+    
+  }
+
+  @media screen and (max-width:523px) {
+    h1{
+      font-size: 22px;
+    }
+    .tab h2{
+      font-size: 18px;
+    }
+    
+  }
+
+  @media screen and (max-width:460px) {
+    h1{
+      font-size: 22px;
+      margin-left: -20px;
+    }
+    .tab h2{
+      font-size: 18px;
+      margin-left: -20px;
+    }
+    .tab p{
+      margin-left: -20px;
+    }
+  }
+
+  @media screen and (max-width:428px) {
+    h1{
+      font-size: 20px;
+      margin-left: -20px;
+    }
+    .tab h2{
+      font-size: 18px;
+      margin-left: -20px;
+    }
+    .tab p{
+      margin-left: -20px;
+    }
+  }
+
+  @media screen and (max-width:398px) {
+
+    #regForm{
+      width: 100%;
+    }
+    h1{
+      font-size: 19px;
+      margin-left: -20px;
+    }
+    .tab h2{
+      font-size: 17px;
+      margin-left: -20px;
+    }
+    .tab p{
+      margin-left: -20px;
+      font-size: 15px;
+    }
+  }
+
+
+
+  @media screen and (max-width:398px) {
+
+    .btn1{
+      
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn3{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn2{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn4{
+        background-color: #04AA6D;
+        /* background-color: #d33f8d; */
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 16px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        display: none;
+        /* position: absolute; */
+    
+      }
+    }
+
+
+  @media screen and (max-width:347px) {
+
+  .btn1{
+      /* background-color: #04AA6D; */
+      background-color: #d33f8d;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+      margin-top: 30px;
+      margin-left: 0px;
+      font-size: 14px;
+      /* font-family: Raleway; */
+      cursor: pointer;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+      z-index: 100;
+      /* position: absolute; */
+  
+    }
+    .btn3{
+      /* background-color: #04AA6D; */
+      background-color: #d33f8d;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+      margin-top: 30px;
+      margin-left: 5px;
+      font-size: 14px;
+      /* font-family: Raleway; */
+      cursor: pointer;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+      z-index: 100;
+      /* position: absolute; */
+  
+    }
+    .btn2{
+      /* background-color: #04AA6D; */
+      background-color: #d33f8d;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+      margin-top: 30px;
+      margin-left: 0px;
+      font-size: 14px;
+      /* font-family: Raleway; */
+      cursor: pointer;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+      z-index: 100;
+      /* position: absolute; */
+  
+    }
+    .btn4{
+      /* background-color: #04AA6D; */
+      background-color: #04AA6D;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+      margin-top: 30px;
+      margin-left: 5px;
+      font-size: 14px;
+      /* font-family: Raleway; */
+      cursor: pointer;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+      z-index: 100;
+      display: none;
+      /* position: absolute; */
+  
+    }
+     h1{
+       margin-left: -25px;
+       font-size: 18px;
+     }
+     .tab h2{
+       margin-left: -25px;
+       font-size: 16px;
+     }
+     .tab p{
+       margin-left: -25px;
+       font-size: 14px;
+     }
+  }
+
+
+  @media screen and (max-width:328px) {
+
+    .btn1{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn3{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn2{
+        /* background-color: #04AA6D; */
+        background-color: #d33f8d;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        /* position: absolute; */
+    
+      }
+      .btn4{
+        background-color: #04AA6D;
+        /* background-color: #d33f8d; */
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 14px;
+        /* font-family: Raleway; */
+        cursor: pointer;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        z-index: 100;
+        display: none;
+        /* position: absolute; */
+    
+      }
+       h1{
+         margin-left: -35px;
+         font-size: 15px;
+       }
+       .tab h2{
+         margin-left: -35px;
+         font-size: 14px;
+       }
+       .tab p{
+         margin-left: -35px;
+         font-size: 12px;
+       }
+    }
+  
+  
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+/*  
+  .step.finish {
+    background-color: #111;
+  }
+   */

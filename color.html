@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoughCode: Gradient Background Colors</title>
+<meta name="description"
+        content="Choose any two color it will display diffrent colors in between your selected two colors then click your favourite div, it will expand and choose a right hex-color code.  ">
+<meta name="theme-color" content="#35acdb">
+  <link rel="shortcut icon" href="./image/roughcode.ico" type="image/x-icon">
+  <link rel="stylesheet" href="color.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="xy()">
+  <div class="se-pre-con"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script>
+
+    //paste this code under the head tag or in a separate js file.
+    // Wait for window load
+    $(window).load(function () {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+    });
+  </script>
+
+
+  <div class="bounce"> </div>
+  <div class="shadow"> </div>
+  
+
+  <div id="snackbar">
+    <h2> we found your device's width to be
+      <p id="devicewidthfornotification" style="color:#fc0a9f;font-size:20px;"></p>
+    </h2>
+    <h1 id="hahaha"></h1>
+
+
+  </div>
+
+
+  <div class="name">
+    <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" class="licon"
+      colors="primary:#1f1fd3,secondary:#FA26A0" stroke="92" style="width:100px;height:100px;">
+    </lord-icon>
+    <h1> <span class="text1">R</span><span class="text2">O</span><span class="text3">U</span><span
+        class="text4">G</span><span class="text5">H</span><span class="text6">C</span><i id="exp"
+        style="color: rgb(73, 250, 3);" class="fas fa-code"></i><span class="text7">D</span><span class="text8">E</span>
+    </h1>
+    <p>HAPPY CODING!</p>
+  </div>
+
+
+  <div class="stop-div rellax" data-rellax-speed="-2" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+  </div>
+
+
+
+
+
+  <div class="heading">
+    <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="4000">
+      <h1>Gr<span style="border-bottom: 4px solid orange;">adi</span>ent Background <i style="color: blueviolet;"
+          class="fas fa-palette"></i>olors</h1>
+    </div>
+
+  </div>
+
+  <div class="floating-text" data-aos="slide-up" data-aos-delay="130" data-aos-duration="9000">
+    <h2>Want to run your <span style="color: rgb(247, 7, 207);">code</span>?</h2>
+  </div>
+  <div class="link" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000">
+    <a href="#"><span>Try Our Editor</span></a>
+  </div>
+
+  <div class="subtitle">
+    <div class="col" data-aos="flip-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1000">
+      <h3><i style="color: #5000f1;" class="far fa-dot-circle"></i> C<i style="color: rgb(236, 58, 13);"
+          class="fas fa-fill-drip"></i>lor palette Generator</h3>
+    </div>
+    <div class="col" data-aos="flip-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1000">
+      <h3><i style="color: #5000f1;" class="far fa-dot-circle"></i> Gradient Generator</h3>
+    </div>
+    <div class="col" data-aos="flip-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1000">
+      <h3><i style="color: #5000f1;" class="far fa-dot-circle"></i> Copy a suitable hex-code</h3>
+    </div>
+  </div>
+
+
+
+  <div class="fixed-style rellax" data-rellax-speed="3" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+
+  </div>
+
+
+
+
+  <div class="fixed-style-1 rellax" data-rellax-speed="0" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+  </div>
+
+
+
+
+  <div class="fixed-style-2 rellax" data-rellax-speed="2" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+
+  </div>
+
+  <div class="sub-heading" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000">
+    <h3>C<i style="color: rgb(236, 58, 13);" class="fas fa-fill-drip"></i>lor <span
+        style="color: #2909e0;">palette</span> Gene<span style="border-bottom: 3px solid rgb(223, 20, 88);">rato</span>r
+    </h3>
+    <p>Choose a suitable <span style="color: rgb(52, 8, 248); font-weight: 600;">hex-color</span> code for background
+    </p>
+
+  </div>
+
+  <div class="contentBox">
+
+
+    <div class="colorBox-1" data-aos="slide-up" data-aos-delay="600" data-aos-duration="1000">
+
+
+
+      <div class="color"></div>
+
+
+
+      <p class="code">#4cae3a</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="colorBox" data-aos="slide-up" data-aos-delay="500" data-aos-duration="1000">
+
+
+
+      <div class="color"></div>
+
+
+
+      <p class="code">#4cae3a</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="colorBox" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1000">
+
+
+
+      <div class="color"></div>
+
+
+
+      <p class="code">#4cae3a</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="colorBox-4" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">
+
+
+
+      <div class="color"></div>
+
+
+
+      <p class="code">#4cae3a</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="colorBox-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000">
+
+
+
+      <div class="color"></div>
+
+
+
+      <p class="code">#4cae3a</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="colorBox-6" data-aos="slide-up" data-aos-delay="100" data-aos-duration="1000">
+
+
+
+      <div class="color"></div>
+
+
+
+      <p class="code">#4cae3a</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <div class="actions">
+
+
+    <div data-aos="fade-in">
+
+      <p>Press any key to Generate or Click on Generate Button</p>
+
+    </div>
+
+
+    <div data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000" >
+      <button><span>Generate</span></button>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+  <div class="fixed-style-3 rellax" data-rellax-speed="5" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+
+  </div>
+
+
+
+
+  <div class="fixed-style-4 rellax" data-rellax-speed="1" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+
+  </div>
+
+
+
+
+  <div class="fixed-style-5 rellax" data-rellax-speed="1" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+
+  </div>
+
+
+  <!-- <div class="fixed-style-6" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);"></div> -->
+
+  <div class="fixed-style-7 rellax" data-rellax-speed="1" style="transform: translate3d(0px, 0px, 0px) rotate(45deg);">
+
+  </div>
+
+
+
+
+
+
+  <div class="design">
+
+    <div class="expandable-div-header" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000">
+      <h2><i class="fas fa-compress-arrows-alt"></i><span> Expand</span>able <span
+          style="color: rgb(231, 19, 136);">Color</span> Maker Tool</h2>
+      <p style="color:#808080;">Choose any two color it will
+        display diffrent colors in between
+        your selected two colors then click your favourite div,
+        it will expand and choose a
+        right hex-color code.</p>
+    </div>
+
+    <div class="color-inputs">
+      <div class="color-input-item">
+        <label for="" style="font-weight: 500;
+          font-size: 18px;
+          ">Ch<i class="fas fa-check-circle"></i>ose two suitable colors</label>
+        <input type="color" value="#265cd9" id="color1" />
+      </div>
+      <div class="color-input-item">
+        <input type="color" value="#15d192" id="color2" />
+      </div>
+      <div class="palette-count">
+        <select id="palette-count-input" style="border: 2px solid rgb(248, 7, 168); border-radius: 6px;">
+          <option value="6" selected>6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+    </div>
+    <div class="palette" id="palette"></div>
+
+  </div>
+
+  <div class="notification" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="6000">
+    <lord-icon src="https://cdn.lordicon.com/krmfspeu.json" trigger="loop" class="rotate"
+      colors="primary:#121331,secondary:#08a88a" stroke="97">
+    </lord-icon>
+    <div class="image">
+
+    </div>
+    <p>We found that your screen width is less than </p>
+    <span>450px </span>
+    <h5>Please rotate your phone</h5>
+  </div>
+
+  <div class="color-tester" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000">
+    <h2><i class="fas fa-swatchbook"></i> Color <span style="color:#00ffd5";> testing</span> tool</h2>
+    <p>Experiment with different background colors</p>
+  </div>
+
+  <div class="container-1" style="text-align: center; width: 100%; height: 250px;">
+
+    <input type="text" value="#31fbe9" placeholder="#31fbe9"
+      style="color: rgb(7, 11, 253); border: 2px solid black; border-radius: 4px;padding: 14px;margin-bottom: 10px;"
+      id="hex">
+
+    <input type="color" value="#31fbe9" id="color"
+      style="color: rgb(7, 11, 253);  border-radius: 50%;padding: 9px;margin-bottom: 8px;">
+    <div class="colorful" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+      style="width: 100%; height: 200px; background-color: #31fbe9;background-image: url('./image/mobilenet.png');">
+      <h2 style="color: #ffffff;">Display a color on background </h2>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="try-background" data-aos="slide-right" data-aos-delay="100" data-aos-duration="4000"
+    style="margin-top:10px;">
+    <h2><i class="fas fa-fill" style="color: #ff07d6;"></i> Play with <span style="color: #ff07d6;">Colors</span></h2>
+    <p>Choose and display a good color reflect on background</p>
+  </div>
+
+  <div class="container-box" data-aos="slide-up" data-aos-duration="1000">
+
+    <div class="container">
+      <div class="colors">
+        <input type="color" id="color-a" value="#e413e7">
+        <input type="color" id="color-b" value="#eb511e">
+      </div>
+      <div class="buttons">
+        <button id="fake1" onclick="setDirection('to top',this)">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+        <button class="active" onclick="setDirection('to bottom',this)">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button onclick="setDirection('to right',this)">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button onclick="setDirection('to left',this)">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="fake" class="rotate-icon" onclick="setDirection('to top right',this)">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+        <button class="rotate-icon" onclick="setDirection('to bottom left',this)">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="rotate-icon" onclick="setDirection('to bottom right',this)">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="rotate-icon" onclick="setDirection('to top left',this)">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
+      <button id="submit" onclick="generateCode()"><span>Generate<i class="fi-rr-cursor-plus"></i></span></button>
+      <div class="output">
+        <textarea id="code" rows="2"></textarea>
+        <button id="copy" onclick="copyText()"><i class="fi-rr-copy"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+
+    <div class="foot-col-1">
+      <h3> Build & Test</h3>
+
+      <a href="home.html" style="margin-top: 20px;"><i class="fas fa-home"></i> Home-Roughcode</a>
+      <a href="codeeditor.html"><i class="fab fa-html5"></i> General Code Editor</a>
+      <a href="codeeditoradvance.html"><i class="fas fa-edit"></i> Advanced Code Editor</a>
+      <a href="color.html"><i class="fas fa-palette"></i> Gradient Background Colors</a>
+      <a href=""></a>
+
+    </div>
+
+    <div class="foot-col-2">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:roughcode2021@gmail.com"
+          style="text-decoration: none;color: #ffffff;">roughcode2021@gmail.com</a> </p>
+
+    </div>
+
+    <div class="foot-col">
+      <h3> ROUGHC<i class="fas fa-code" style="color: rgb(52, 236, 15);" id="light"></i>DE</h3>
+
+
+
+      <p><i class="fab fa-dev"></i> Design and devoloped by ROUGHCODE</p>
+
+    </div>
+
+
+  </footer>
+  <div class="last">
+    <p><i class="far fa-copyright"></i> ROUGHCODE 2021
+      All Right Reserved</p>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+  <script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+  </script>
+  <script>
+    // Also can pass in optional settings block
+    var rellax = new Rellax('.rellax', {
+      speed: -6,
+      center: false,
+      wrapper: null,
+      round: true,
+      horizontal: true,
+      vertical: false,
+
+    });
+  </script>
+
+
+  <script>
+    function xy() {
+      setTimeout(myFunction, 3000);
+
+
+
+      function myFunction() {
+        var x = document.getElementById("snackbar"); x.className = "show"; setTimeout(function () {
+          x.className = x.className.replace("show", "");
+          console.log('jojoj');
+        }, 15000);
+      }
+    }</script>
+
+  <script>
+
+    var txt1 = window.innerWidth;
+
+    if (txt1 >= 950) {
+      document.getElementById("hahaha").innerHTML = "cool ! ready to rock";
+      document.getElementById("snackbar").style.borderLeftColor = "green";
+
+      console.log('honettttt');
+    }
+    else if (txt1 >= 450) {
+      document.getElementById("hahaha").innerHTML = "ok ! try to expand";
+      document.getElementById("snackbar").style.borderLeftColor = "yellow";
+
+      console.log('honettttt');
+    }
+    else {
+      document.getElementById("hahaha").innerHTML = " not preferrable";
+      document.getElementById("snackbar").style.borderLeftColor = "crimson";
+      console.log('honethudhudhudhdttt');
+
+    }
+    document.getElementById("devicewidthfornotification").innerHTML = txt1 + "px";
+    window.addEventListener("resize", myFunction);
+
+
+
+
+    function myFunction() {
+      var txt = window.innerWidth;
+
+      document.getElementById("devicewidthfornotification").innerHTML = txt + "px";
+
+    }
+  </script>
+
+
+
+
+
+
+  <script>
+    var code = document.querySelectorAll('.code');
+
+    var color = document.querySelectorAll('.color');
+
+    var button = document.querySelector('button');
+
+    button.addEventListener("click", colorGen);
+
+    function colorGen() {
+
+      var letters = '0123456789abcdef';
+
+      var hastag = ['#', '#', '#', '#', '#', '#'];
+
+      for (let i = 0; i < 6; i++) {
+
+        hastag[i] += letters[Math.floor(Math.random() * 16)];
+
+        hastag[i] += letters[Math.floor(Math.random() * 16)];
+
+        hastag[i] += letters[Math.floor(Math.random() * 16)];
+
+        hastag[i] += letters[Math.floor(Math.random() * 16)];
+
+        hastag[i] += letters[Math.floor(Math.random() * 16)];
+
+        hastag[i] += letters[Math.floor(Math.random() * 16)];
+
+      }
+
+      for (let i = 0; i < code.length; i++) {
+
+        code[i].innerHTML = hastag[i];
+
+        color[i].style.backgroundColor = hastag[i];
+
+      }
+
+    }
+
+    colorGen();
+
+    window.onkeyup = (e) => {
+
+      if (e.which || e.keycode == 33) {
+
+        colorGen();
+
+      }
+
+    };
+  </script>
+
+
+  <script>
+    function run() {
+      // for the initial run
+      const colorInputOne = document.getElementById("color1");
+      const colorInputTwo = document.getElementById("color2");
+      const paletteCount = document.getElementById("palette-count-input");
+      generatePalette(colorInputOne.value, colorInputTwo.value, paletteCount.value);
+
+      //   adding listners for the input elements
+      [colorInputOne, colorInputTwo, paletteCount].forEach((colorInput) => {
+        colorInput.addEventListener("input", function () {
+          generatePalette(
+            colorInputOne.value,
+            colorInputTwo.value,
+            paletteCount.value
+          );
+        });
+      });
+    }
+
+    function generatePalette(color1, color2, paletteCount) {
+      const paletteContainer = document.getElementById("palette");
+      //     remove all child nodes and append new nodes
+      paletteContainer.innerHTML = "";
+      const colorsPalette = chroma
+        .scale([color1, color2])
+        .mode("lch")
+        .colors(paletteCount);
+      colorsPalette.forEach((palette) => {
+        const paletteItem = document.createElement("div");
+
+        const paletteColorValue = document.createElement("span");
+        paletteColorValue.classList.add("palette-color-value");
+        console.log(chroma.contrast(palette, chroma(palette).darken(3)));
+
+        paletteColorValue.style.setProperty(
+          "--name-color",
+          chroma.contrast(palette, chroma(palette).darken(3)) > 2
+            ? chroma(palette).darken(3)
+            : chroma(palette).luminance(3)
+        );
+        paletteColorValue.appendChild(document.createTextNode(palette));
+        paletteItem.appendChild(paletteColorValue);
+
+        paletteItem.classList.add("palette-item");
+        paletteItem.style.setProperty("--palette-color", palette);
+        paletteContainer.appendChild(paletteItem);
+      });
+    }
+    window.addEventListener("load", (event) => {
+      run();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+
+
+  <script>
+    let colorInput = document.querySelector('#color');
+    let hexInput = document.querySelector('#hex');
+
+
+    colorInput.addEventListener('input', () => {
+      let color = colorInput.value;
+      hexInput.value = color;
+      // document.body.style.backgroundColor = color;
+      document.querySelector('.colorful').style.backgroundColor = color;
+
+
+
+      // document.querySelector('h1').style.color = color; 
+    });
+
+
+
+
+  </script>
+
+  <script>
+
+    let colorOne = document.getElementById('color-a');
+    let colorTwo = document.getElementById('color-b');
+    let currentDirection = 'to bottom';
+    let outputCode = document.getElementById('code');
+
+    function setDirection(value, _this) {
+      let directions = document.querySelectorAll(".buttons button");
+      for (let i of directions) {
+        i.classList.remove('active');
+      }
+      _this.classList.add('active');
+      currentDirection = value;
+    }
+
+    function generateCode() {
+      outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
+
+      document.getElementsByClassName("container-box")[0].style.backgroundImage = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`;
+    }
+
+    function copyText() {
+      outputCode.select();
+      document.execCommand('copy');
+      alert('Gradient Copied!');
+    }
+
+    generateCode();
+
+  </script>
+
+
+
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

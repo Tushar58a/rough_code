@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rough Code: The Online Code Editor and Color Selector Platform </title>
+<meta name="description"
+        content="RoughCode is a combination of online code editor and color selector platform where you can run and test HTML, CSS , JS code and experience and impliment your code with us costfree-simple-sophisticated  ">
+<meta name="theme-color" content="#eb148a">
+  <link rel="stylesheet" href="popup.css">
+  <link rel="shortcut icon" href="./image/roughcode.ico" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+  <div class="se-pre-con"></div>
+
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script>
+
+    //paste this code under the head tag or in a separate js file.
+    // Wait for window load
+    $(window).load(function () {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+    });
+  </script>
+  <form id="regForm" action="index.html">
+    <div data-aos="fade-in" data-aos-delay="1000" data-aos-duration="4000">
+      <h1>Welcome to ROUGHC<i class="fas fa-code" style="color: rgb(78, 247, 11);"></i>DE!</h1>
+    </div>
+
+    <div class="tab">
+      <h2>Front-end <span style="text-shadow: 0px 4px 4px rgba(0,0,0,0.8);">code</span> Editor and <span style="color: rgb(255, 0, 212);">color</span> selector platform</h2>
+      <p>RoughCode is a combination of online code editor and color selector platform where you can run and test HTML,
+        CSS , JS code and experiment with front-end code costfree-simple-sophisticated.</p>
+
+
+    </div>
+    <div class="tab">
+      <div data-aos="fade-in" data-aos-delay="500" data-aos-duration="4000">
+        <h2>Customizeable th<i class="fas fa-fill-drip" style="color: rgb(255, 81, 0);"></i>me and better coding
+          experience</h2>
+        <p>we have it both- live editor and asynchronous editor .Extract the copy through clipboard after testing the
+          code in our live/on-run editor.our editor has detector api embedded to detect out the wrong syntax</p>
+      </div>
+
+    </div>
+    <div class="tab">
+      <h2>Gradient Background generator</h2>
+      <p>our exclusive section to sort you out with colors by providing you with every option to make your page your's
+        own</p>
+    </div>
+    <div class="tab">
+      <h2>its advance and well equipped</h2>
+      <p>feel free to use cdn and script files in both of our editors .try by importing google fonts and images using
+        abbreviations ...it works </p>
+    </div>
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" class="btn1" id="prevBtn1" onclick="location.href='home.html'">Previous</button>
+
+        <button type="button" class="btn2" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" class="btn3" onclick="nextPrev(1)">Next</button>
+        <button type="button" style="background-color: #04AA6D;" id="nextBtn1" class="btn4" onclick="location.href='home.html'">start</button>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+
+  <script>
+    var currentTab = 0; // Current tab is set to be the ujjal deb (0)
+    showTab(currentTab); // Display the current tab
+
+    function showTab(n) {
+      // jida iccha ida dekhaibo
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //button display r important concept
+      if (n == 0) {
+        document.getElementById("prevBtn1").innerHTML = "Skip";
+        document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("prevBtn1").style.display = "inline";
+
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+        document.getElementById("prevBtn").innerHTML = "previous";
+        document.getElementById("prevBtn1").style.display = "none";
+
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").style.display = "none";
+        document.getElementById("nextBtn1").style.display = "inline";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+        document.getElementById("nextBtn").style.display = "inline";
+        document.getElementById("nextBtn1").style.display = "none";
+
+
+      }
+      //indicator r step ti dekhaibo
+      fixStepIndicator(n)
+    }
+
+    function nextPrev(n) {
+      // main 
+      var x = document.getElementsByClassName("tab");
+
+      if (n == 1 && !validateForm()) return false;
+
+      x[currentTab].style.display = "none";
+
+      currentTab = currentTab + n;
+
+      if (currentTab >= x.length) {
+
+        document.getElementById("regForm").submit();
+        return false;
+      }
+
+      showTab(currentTab);
+    }
+
+    function validateForm() {
+
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+
+      for (i = 0; i < y.length; i++) {
+
+        if (y[i].value == "") {
+
+          y[i].className += " invalid";
+
+          valid = false;
+        }
+      }
+
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid;
+    }
+
+    function fixStepIndicator(n) {
+
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+
+      x[n].className += " active";
+    }
+
+
+
+    const imgArray = [
+
+      'url(./images/4428861\ \(2\).jpg)',
+      'url("card1.png")',
+      'url("card2.png")',
+      'url("card3.png")',
+      'url("card4.png")',
+      'url("card5.png")',
+      'url("space.jpg")',
+      'url("summer.jpg")',
+      'url("jungle.jpg")',
+      'url("farm.jpg")',
+      'url("code.jpg")',
+      'url("card5.jpg")',
+
+
+
+
+    ]
+
+    var i = 0;
+
+    const htmlstyle = document.getElementById("regForm");
+
+    const bg = imgArray[0];
+    htmlstyle.style.backgroundImage = bg;
+
+    i = i + 1;
+
+    console.log('huhuhu');
+  </script>
+
+
+
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
